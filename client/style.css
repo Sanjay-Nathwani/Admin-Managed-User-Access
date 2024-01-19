@@ -1,0 +1,304 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.adminlog {
+  width: 100%;
+
+  height: 100%;
+
+  display: flex;
+}
+section:nth-last-child(2) {
+  width: 55%;
+  height: 100%;
+  background: rgb(8, 9, 90);
+}
+.logo {
+  padding: 0 6rem;
+  display: grid;
+  place-content: center;
+
+  color: hsl(240.94deg 100% 50.2%);
+  background: white;
+  height: 10rem;
+}
+section:nth-last-child(2) div h2 {
+  font-size: 5rem;
+}
+section:nth-last-child(1) {
+  width: 45%;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.adminval {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.adminval input {
+  border-radius: 6px;
+  padding-left: 12px;
+  padding: 10px;
+  outline: none;
+  background: transparent;
+  border: 1px solid black;
+}
+.credential h1 {
+  margin-top: 30px;
+}
+.credential {
+  width: 60%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 40px;
+}
+
+.credential button {
+  width: 100%;
+  height: 45px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color: white;
+  background-color: hsl(240.94deg 100% 50.2%);
+  border-radius: 6px;
+}
+.createlog section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+.createlog section:nth-child(1) {
+  border-right: 5px solid gray;
+}
+.idcreate {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.idcreate section:nth-child(1) {
+  width: 50%;
+}
+
+.viewlist {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.listcon {
+  position: relative;
+  width: 100%;
+  background: lightblue;
+
+  display: flex;
+  padding: 40px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.listcon .listval {
+  width: 90%;
+  height: auto;
+  padding-left: 12px;
+  display: flex;
+  background-color: white;
+}
+
+.msgcount {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  border-radius: 50%;
+  background: blue;
+  z-index: 11;
+}
+
+#viewbtn {
+  align-self: self-end;
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 5px 20px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+.uservalues {
+  padding: 40px;
+  width: 20rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+  align-items: center;
+}
+.uservalues div {
+  width: 100%;
+}
+.uservalues div input {
+  width: 100%;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid black;
+  padding: 12px 7px;
+}
+
+.photo {
+  width: 100%;
+  height: 170px;
+  margin-top: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed darkgray;
+  border-radius: 3px;
+  padding: 12px 7px;
+  background-color: lightgray;
+}
+
+.photo img {
+  width: auto;
+  height: 170px;
+}
+
+/* #viewbt */
+#upload {
+  width: 105%;
+  height: 45px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color: white;
+
+  background-color: hsl(240.94deg 100% 50.2%);
+  border-radius: 6px;
+}
+
+.view {
+  position: absolute;
+  border: none;
+  padding: 8px 18px;
+  border: 1px solid blue;
+  color: blue;
+  top: 2rem;
+  background: transparent;
+  border-radius: 4px;
+  right: 2rem;
+}
+
+.sideinfo {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 111;
+  background: rgb(0, 0, 0, 0.4);
+}
+
+.sidevalues {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+.status {
+  text-transform: capitalize;
+  font-size: 2rem;
+  color: red;
+}
+.green {
+  color: green;
+}
+.phide {
+  display: none;
+  transition: 2s;
+  transform: translateX(100%);
+}
+.hide {
+  transform: translateX(100%);
+}
+@media (max-width: 900px) {
+  .logo {
+    width: 50px;
+    margin-top: 30px;
+  }
+  section:nth-last-child(2) div h2 {
+    font-size: 2rem;
+  }
+  .adminlog {
+    width: 100%;
+
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+  }
+  section:nth-last-child(2) {
+    width: 100%;
+    height: 40%;
+    /* background: rgb(8, 9, 90); */
+  }
+  .credential {
+    width: 80%;
+    gap: 25px;
+  }
+  .viewlist {
+    width: 80%;
+  }
+  .uservalues {
+    width: 12rem;
+    padding: 0;
+  }
+  .createlog section:nth-child(1) {
+    border-right: 0px solid gray;
+  }
+  section:nth-last-child(1) {
+    width: 100%;
+  }
+  .sidevalues {
+    width: 85%;
+  }
+  .status {
+    font-size: 1rem;
+  }
+}

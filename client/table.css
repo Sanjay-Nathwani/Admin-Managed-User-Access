@@ -1,0 +1,89 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  margin-top: 1rem;
+}
+table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+th {
+  background: plum;
+}
+
+th,
+td {
+  padding: 10px 0px;
+  max-width: 70px;
+  height: 40px;
+  text-align: center;
+}
+
+td img {
+  width: auto;
+  height: 100%;
+}
+button {
+  width: 90px;
+  height: 35px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color: hsl(240.94deg 100% 50.2%);
+  background-color: transparent;
+  border: 1px solid hsl(240.94deg 100% 50.2%);
+  border-radius: 6px;
+}
+
+#action {
+  /* border: none; */
+
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  /* gap: 10px; */
+}
+
+#action button:nth-child(1) {
+  background-color: blue;
+  color: white;
+}
+
+@media (max-width: 900px) {
+  #action {
+    /* border: none; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+    align-items: center;
+    /* gap: 10px; */
+  }
+  button {
+    width: 60px;
+    height: 30px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: hsl(240.94deg 100% 50.2%);
+    background-color: transparent;
+    border: 1px solid hsl(240.94deg 100% 50.2%);
+    border-radius: 6px;
+  }
+}

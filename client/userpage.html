@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link  href="./node_modules/cropperjs/dist/cropper.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="uservalues">
+        <div>
+          <label for="">Name</label><br />
+          <input type="text" id="userName" />
+        </div>
+        <div>
+          <label for="">photo</label><br />
+          <div class="photo">
+            <img onclick="getImageFile()" id="imageUpload" src="../image/download.png"></img>
+          </div>
+          <input
+            type="file"
+            accept="image/*"
+            id="inputimage"
+            onchange="handleImageFile()"
+            style="display: none" />
+        </div>
+        <div><button onclick="uploadImage()" id="upload">upload</button></div>
+      </div>
+      <button class="view" onclick="showSideBar()">View</button>
+    </div>
+    <div class="sideinfo phide">
+      <div class="sidevalues hide">
+        <div class="uservalues">
+          <div>
+            <label for="">Name</label><br />
+            <input type="text" id="sideuserName" />
+          </div>
+          <div>
+            <label for="">photo</label><br />
+            <div class="photo">
+              <!-- <img onclick="getImageFile()" id="imageUpload" src="../image/download.png"></img> -->
+              <img id="selectedImage" src="../image/WhatsApp Image 2024-01-12 at 09.11.01_03611db3.jpg"></img>
+            </div>
+            
+          </div>
+          <p class="status" id="action">not accepted by admin</p>
+        </div>
+        <button class="view" onclick="showSideBar()">back</button>
+      </div>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/image-conversion@1.0.0/dist/browser.js"></script> -->
+    <script src="./node_modules/cropperjs/dist/cropper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/image-conversion@1.0.0/dist/browser.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.5/axios.min.js"></script>
+    <script src="./user.js"></script>
+  </body>
+</html>
